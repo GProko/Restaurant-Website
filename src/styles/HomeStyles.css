@@ -1,0 +1,128 @@
+.home{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.headerContainer{
+   width: auto;
+   margin-left:30px;
+}
+.home .headerContainer{
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 35px;
+    color:#222;
+}
+.home p{
+    margin-top:15px;
+    padding: 0;
+    font-size: 29px;
+    font-weight: lighter;
+    color: black;
+}
+.headerContainer button{
+    background-color: #222;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    width: 180px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+/* media query */
+@media only screen and (max-width:600px) {
+    .home{
+        justify-content: center;
+        align-items: center;
+    }
+    .headerContainer{
+        margin-left: 0;
+        border-radius: 10px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #121619;
+        color: #fff;
+
+    }
+    .home .headerContainer h1{
+        font-size: 30px;
+        margin: 30px 0px;
+        color: #fff;
+    }
+    .home .headerContainer p{
+        font-size: 20px;
+        color: #fff;
+    }
+    .headerContainer button{
+     color: #121619;
+     background-color: #fff;
+     margin-bottom: 30px;
+
+    }
+
+}
+.form_div{
+  padding: 20px;
+}
+.csform_row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom:20px ;
+}
+.csform_col_8{
+    width: 40%;
+ }
+.csform_col_4{
+   width: 40%;
+}
+.csform_row input{
+    width: 100%;
+    font-size: 16px;
+    padding: 5px 10px ;
+}
+.csform_row select{
+    width: 100%;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+.csform_row input[type=submit]{
+   background-color: blue;
+
+    text-align: center;
+    padding: 10px 0px;
+   color: #fff;
+
+}
+.Form_title{
+   text-align: center;
+   color: blue;
+
+}
+@media only screen and (max-width:600px) {
+    .csform_row{
+        flex-direction: column;   
+        padding: 0; 
+    }
+    .csform_col_8{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .csform_col_4{
+        width: 100%;
+        padding-bottom: 10px;
+
+    }
+}
